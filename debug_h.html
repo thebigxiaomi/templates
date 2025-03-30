@@ -1,10 +1,11 @@
 <html>
 <head>
 <title>debug.h - Best Template Practice</title>
+<meta charset="UTF-8">
 <script>
 function copyText(element) {
-    navigator.clipboard.writeText(element.innerText);
-    alert("Copied to clipboard!");
+ navigator.clipboard.writeText(element.innerText);
+ alert("Copied to clipboard!");
 }
 </script>
 </head>
@@ -22,7 +23,7 @@ using namespace std;
 
 struct Tuning
 {
-    static const bool verbose;
+ static const bool verbose;
 };
 
 void vis(const char *message = nullptr); // visualizzare
