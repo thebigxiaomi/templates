@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <script>
 function copyText(element) {
- navigator.clipboard.writeText(element.innerText);
- alert("Copied to clipboard!");
+    navigator.clipboard.writeText(element.innerText);
+    alert("Copied to clipboard!");
 }
 </script>
 </head>
@@ -15,22 +15,22 @@ function copyText(element) {
 <pre onclick="copyText(this)">#ifndef DEBUG_H
 #define DEBUG_H
 
-#include <iostream>
-#include <sstream>
-#include <string>
-#include <cassert>
+#include &lt;iostream&gt;
+#include &lt;sstream&gt;
+#include &lt;string&gt;
+#include &lt;cassert&gt;
 using namespace std;
 
 struct Tuning
 {
- static const bool verbose;
+    static const bool verbose;
 };
 
 void vis(const char *message = nullptr); // visualizzare
 
-template <class T>
+template &lt;class T&gt;
 bool asseq(T a, T b, const char *mess = nullptr, bool crash = true);
-template <class T>
+template &lt;class T&gt;
 bool asneq(T a, T b, const char *mess = nullptr, bool crash = true);
 
 #ifdef NO_EXPLICIT
